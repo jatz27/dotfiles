@@ -43,7 +43,7 @@ return packer.startup(function(use)
 
   -- Packer
   use "wbthomason/packer.nvim" -- Restor de paquetes
-  --use "lewis6991/impatient.nvim" -- Optimization
+  use "lewis6991/impatient.nvim" -- Optimization
   -- themes and colorscheme
   use "navarasu/onedark.nvim" -- colorscheme onedark
   use "kyazdani42/nvim-web-devicons" --Iconos
@@ -53,9 +53,9 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
   -- Alpha dashboard
-  --use "goolord/alpha-nvim"
+  use "goolord/alpha-nvim"
   -- which-key
-  --use "folke/which-key.nvim"
+  use "folke/which-key.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- Plugion para complete lsp
@@ -89,30 +89,30 @@ return packer.startup(function(use)
   use 'JoosepAlviste/nvim-ts-context-commentstring' --Contexto de comentarios
 
   --Terminal toggle
-  --use "akinsho/toggleterm.nvim"
+  use "akinsho/toggleterm.nvim"
   --  use "voldikss/vim-floaterm"
   -- Maximisa ventanas
-  --use "szw/vim-maximizer"
+  use "szw/vim-maximizer"
 
   -- Telescope
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-lua/popup.nvim'
-  --use "ahmedkhalf/project.nvim" -- Project
+  use "ahmedkhalf/project.nvim" -- Project
   -- Git
   use "lewis6991/gitsigns.nvim"
   use "kdheepak/lazygit.nvim"
 
   -- Nvim Tree
-  --use 'kyazdani42/nvim-tree.lua'
-  -- Las lineas de los espacios
-  --use "lukas-reineke/indent-blankline.nvim"
+  use 'kyazdani42/nvim-tree.lua'
+  -- Ident
+  use "lukas-reineke/indent-blankline.nvim"
 
   -- colorizer
-  --use "norcalli/nvim-colorizer.lua"
+  use "norcalli/nvim-colorizer.lua"
 
   --EazyMotion
-  --use "easymotion/vim-easymotion"
+  use "easymotion/vim-easymotion"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then
