@@ -16,7 +16,7 @@ local servers = { "jsonls",
                   --[[ "taplo", ]]
                   "yamlls",
                   "rust_analyzer",
-                  "powershell_es",
+                  -- "powershell_es",
                   "eslint"
                   }
 

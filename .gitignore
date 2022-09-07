@@ -1,0 +1,41 @@
+# Ignorar
+scoop
+nvim/plugin/packer_compiled.lua
+
+# Archivos compilados de lua
+*.src.rock
+*.zip
+*.tar.gz
+
+# Objetos
+*.o
+*.os
+*.ko
+*.obj
+*.elf
+
+# Precompilados
+*.gch
+*.pch
+
+# Librerias
+*.lib
+*.a
+*.la
+*.lo
+*.def
+*.exp
+
+# Archivos (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Ejecutable
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex

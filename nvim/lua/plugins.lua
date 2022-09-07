@@ -79,14 +79,14 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
 
   -- Treesitter
-  --use {
-   -- "nvim-treesitter/nvim-treesitter",
-   -- run = ":TSUpdate",
- -- }
-  --use "p00f/nvim-ts-rainbow"
-  --use "windwp/nvim-autopairs" -- Autopairs, integrado con cmp y treesitter
-  --use "numToStr/Comment.nvim" -- Comentarios
-  --use 'JoosepAlviste/nvim-ts-context-commentstring' --Contexto de comentarios
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+  use "p00f/nvim-ts-rainbow"
+  use "windwp/nvim-autopairs" -- Autopairs, integrado con cmp y treesitter
+  use "numToStr/Comment.nvim" -- Comentarios
+  use 'JoosepAlviste/nvim-ts-context-commentstring' --Contexto de comentarios
 
   --Terminal toggle
   --use "akinsho/toggleterm.nvim"
@@ -95,13 +95,13 @@ return packer.startup(function(use)
   --use "szw/vim-maximizer"
 
   -- Telescope
-  --use 'nvim-telescope/telescope.nvim'
-  --use 'nvim-lua/plenary.nvim'
-  --use 'nvim-lua/popup.nvim'
-  --use "ahmedkhalf/project.nvim" -- Proyect
+  use 'nvim-telescope/telescope.nvim'
+  use 'nvim-lua/plenary.nvim'
+  use 'nvim-lua/popup.nvim'
+  --use "ahmedkhalf/project.nvim" -- Project
   -- Git
-  --use "lewis6991/gitsigns.nvim"
-  --use "kdheepak/lazygit.nvim"
+  use "lewis6991/gitsigns.nvim"
+  use "kdheepak/lazygit.nvim"
 
   -- Nvim Tree
   --use 'kyazdani42/nvim-tree.lua'
