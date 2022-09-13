@@ -5,19 +5,19 @@ end
 
 local lspconfig = require("lspconfig")
 
-local servers = { "jsonls",
-                  "sumneko_lua",
-                  "tsserver",
-                  "vimls",
-                  "pyright",
-                  "cssmodules_ls",
-                  "emmet_ls",
-                  "sqlls",
+local servers = { --"jsonls",
+                  --"sumneko_lua",
+                  --"tsserver",
+                  --"vimls",
+                  --"pyright",
+                  --"cssmodules_ls",
+                  --"emmet_ls",
+                  --"sqlls",
                   --[[ "taplo", ]]
-                  "yamlls",
-                  "rust_analyzer",
+                  --"yamlls",
+                  --"rust_analyzer",
                   -- "powershell_es",
-                  "eslint"
+                  --"eslint"
                   }
 
 lsp_installer.setup {
