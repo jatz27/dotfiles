@@ -1,6 +1,7 @@
 # Ignorar
 scoop
 nvim/plugin/packer_compiled.lua
+lazygit
 
 # Archivos compilados de lua
 *.src.rock
