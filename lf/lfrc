@@ -1,0 +1,37 @@
+set hidden true
+# set icons true */
+#set previewer ~/scripts/lf/preview
+set preview true
+
+# Move and delete files */
+map DD delete
+map p paste
+map x cut
+map y copy
+# Open files */
+cmd open $nvim "$f"
+
+# Functions utils */
+map af ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+}}
+map aa ${{
+  printf "File Name: "
+  read ans
+  touch $ans
+}}
+cmd unarchive ${{
+  case "$f" in
+      *.zip) unzip "$f" ;;
+      *.tar.gz) tar -xzvf "$f" ;;
+      *.tar.bz2) tar -xjvf "$f" ;;
+      *.tar) tar -xvf "$f" ;;
+      *) echo "Unsupported format" ;;
+  esac
+}}
+cmd zip $zip -r "$f" "$f"
+cmd tar %tar cvf "$f.tar" "$f"
+cmd targz %tar cvzf "$f.tar.gz" "$f"
+cmd tarbz2 %tar cjvf "$f.tar.bz2" "$f"
