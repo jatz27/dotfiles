@@ -8,7 +8,7 @@ SAVEHIST=10000
 HISTFILE=~/.zshistory
 
 # Basic auto/tab complete:
-autoload -U compinit
+autoload -U compinit && compinit
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zmodload zsh/complist
@@ -54,6 +54,7 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 # Load zsh-syntax-highlighting; should be last.
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+source /home/julio/.zsh/plugins/zsh-z/zsh-z.plugin.zsh 2>/dev/null
 
 # Put off color green of folders
 export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
