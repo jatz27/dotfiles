@@ -8,7 +8,7 @@ lfcd () {
         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
     fi
 }
-bindkey -s '^o' 'lfcd\n'
+bindkey -s '^[o' 'lfcd\n'
 
 # Load confgs zshrc
 bindkey -s '^[z' 'source ~/.zshrc\n'

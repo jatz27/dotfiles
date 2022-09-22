@@ -1,5 +1,5 @@
 set hidden true
-# set icons true */
+set icons true
 #set previewer ~/scripts/lf/preview
 set preview true
 

@@ -1,0 +1,24 @@
+[alias]
+	s = status
+	po = push -u origin
+	ci = commit
+	alias = config --get-regexp ^alias\\.
+	l = log --graph --pretty=format:'%Cred%h%Creset %Creset%Cblue [%cn] %Cgreen (%cr)  -%C(yellow)%d%Creset %s' --abbrev-commit --date=relative --branches
+	pom = push -u origin main
+	cia = commit -a
+	d = diff
+	a = add
+	co = checkout
+	ec = config --global -e
+	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+	ll = log --graph --pretty=format:'%Cred%h%Creset %Creset%Cblue [%cn] %Cgreen (%cr)  -%C(yellow)%d%Creset %s' --abbrev-commit --date=relative --numstat
+	gr = grep -Ii
+	br = branch
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  ui = auto
+[init]
+  defaultBranch = main
