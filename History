@@ -1,9 +1,0 @@
-ls
-cd .config
-ls
-rm History
-ls
-cd ..
-vin .config/zsh/conf/settings.zsh
-vim .config/zsh/conf/settings.zsh
-ls
