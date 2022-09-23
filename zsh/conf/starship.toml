@@ -1,0 +1,130 @@
+# ~/.config/zsh/conf/starship/starship.toml
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+# Change the default prompt format
+format = """\
+[](#D3D7CF)\
+$env_var\
+[](fg:#D3D7CF bg:#33658A)\
+$username\
+$hostname\
+[](fg:#33658A bg:#f43154)\
+$directory\
+[](fg:#f43154 bg:#BA8A00)\
+$git_branch\
+$git_status\
+[](fg:#BA8A00 bg:#76bddb)\
+$package\
+[](fg:#76bddb bg:#191f48)\
+$python\
+$nodejs\
+$rust\
+$lua\
+[](fg:#191f48 bg:#0a703e)\
+$shell\
+[ ](fg:#0a703e)\
+"""
+
+#$character
+# Change the default prompt characters
+#[character]
+#success_symbol = "[]"
+#error_symbol = "[]"
+
+# Shows an icon that should be included by zshrc script based on the distribution or os
+[env_var.STARSHIP_DISTRO]
+format = '[$env_value ](bold bg:#D3D7CF #000000)'
+variable = "STARSHIP_DISTRO"
+disabled = false
+
+[cmd_duration]
+disabled = true
+
+[line_break]
+disabled = true
+
+# Shows the username
+[username]
+style_user = "bold bg:#33658A #ffffff"
+style_root = "bold bg:#33658A #ffffff"
+format = "[ julio]($style)"
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+style = "bold bg:#33658A #ffffff"
+format = '[@ATZ ]($style)'
+trim_at = "."
+disabled = false
+
+[directory]
+truncation_length = 1
+# truncation_symbol = "…/"
+style = "bold bg:#f43154 fg:#ffffff"
+home_symbol = " ~"
+read_only_style = "bold bg:#dc291e fg:#ffffff"
+read_only = "  "
+format = "[ $path ]($style)[$read_only]($read_only_style)"
+
+[shell]
+powershell_indicator = "  zsh "
+style = "bold fg:#ffffff bg:#0a703e"
+format = "[$powershell_indicator]($style)"
+disabled = false
+
+[git_branch]
+symbol = " "
+format = "[ $symbol$branch ]($style)"
+# truncation_length = 4
+# truncation_symbol = "…/"
+style = "bold fg:#003642 bg:#BA8A00"
+
+[git_status]
+format = '[$all_status$ahead_behind]($style)'
+style = "bold fg:#003642 bg:#BA8A00"
+conflicted = "🏳 $count "
+#up_to_date = " $count "
+untracked = " $count "
+ahead = "⇡${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
+stashed = " $count "
+modified = " $count "
+staged = '[++\($count\)](bold fg:#003642 bg:#BA8A00)'
+renamed = "襁 $count "
+deleted = " $count "
+
+#[docker_context]
+#format = "[ $context](bold blue) "
+
+[python]
+symbol = " "
+format = '[ ${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+# format = "via [$symbol $version $virtualenv]($style)"
+detect_extensions = ["py"]
+style = "bold fg:#ebcc34 bg:#191f48"
+
+[nodejs]
+symbol = " "
+format = "[ $symbol$version ]($style)"
+style = "bold fg:#33dd2d bg:#191f48"
+detect_extensions = ["js", "mjs", "cjs", "ts", "mts", "cts"]
+
+[rust]
+symbol = " "
+style = "bold fg:#f43154 bg:#191f48"
+format = "[ $symbol$version ]($style)"
+detect_extensions = ["rs"]
+
+[package]
+symbol = " "
+style = "bold fg:#003642 bg:#76bddb"
+format = "[ $symbol$version ]($style)"
+
+[lua]
+symbol = ""
+style = "bold fg:#3a86ff bg:#191f48"
+format = "[ $symbol Lua ]($style)"

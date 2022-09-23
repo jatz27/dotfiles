@@ -1,6 +1,11 @@
 # Enable colors and change prompt:
-autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+# autoload -U colors && colors
+# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+
+# starship
+eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~/.config/zsh/conf/starship.toml
+export STARSHIP_DISTRO=""
 
 # History in cache directory:
 HISTSIZE=10000
