@@ -93,12 +93,12 @@ local mappings = {
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
   ["m"] = {"<cmd>MaximizerToggle<CR>", "Maximizer Buffer"},
-   ["f"] = {
+   ["F"] = {
      "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
      "Find files",
    },
-  --[[ ["f"] = {"<cmd>Telescope find_files<CR>", "Telescope"}, ]]
-  ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
+  ["f"] = {"<cmd>lua vim.lsp.buf.formatting()<cr>", "Format"},
+  --[[ ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" }, ]]
   ["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
 
   p = {
