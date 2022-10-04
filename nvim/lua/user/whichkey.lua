@@ -193,11 +193,16 @@ local mappings = {
     h = {"<cmd>split<CR>", "Horizontal" }
   },
 
-  --[[ m = { ]]
-  --[[   name = "EasyMotion", ]]
-  --[[   l = {"<Plug>(easymotion-overwin-line)", "Motion Line"}, ]]
-  --[[   w = {"<Plug>(easymotion-overwin-w)", "Motion Word"} ]]
-  --[[ } ]]
+  x = {
+    name = "Trouble",
+    x = {"<cmd>TroubleToggle<cr>", "Trouble Toggle"},
+    w = {"<cmd>TroubleToggle workspace_diagnostics<cr>", "Trouble Workspace"},
+    d = {"<cmd>TroubleToggle document_diagnostics<cr>", "Trouble Diagnostics"},
+    l = {"<cmd>TroubleToggle loclist<cr>", "Trouble Localization"},
+    q = {"<cmd>TroubleToggle quickfix<cr>", "Trouble Quickfix"},
+    r = {"<cmd>TroubleToggle lsp_references<cr>", "Trouble Lsp References"},
+    c = {"<cmd>TroubleClose<cr>", "Trouble Toggle Close"},
+  },
 }
 
 local vopts = {

@@ -11,7 +11,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     "https://github.com/wbthomason/packer.nvim",
     install_path,
   }
-   print "Installing packer close and reopen Neovim..."
+  print "Installing packer close and reopen Neovim..."
   vim.cmd [[packadd packer.nvim]]
 end
 
@@ -65,7 +65,7 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet complete lua
   use "hrsh7th/cmp-nvim-lsp"
   -- Tabnine complete
-  use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+  use { 'tzachar/cmp-tabnine', run = './install.sh', requires = 'hrsh7th/nvim-cmp' }
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -113,9 +113,16 @@ return packer.startup(function(use)
 
   --EazyMotion
   use "easymotion/vim-easymotion"
+
+  --[[ Plugin trouble ]]
+  use {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
-    if PACKER_BOOTSTRAP then
+  if PACKER_BOOTSTRAP then
     require("packer").sync()
-   end
+  end
 end)
