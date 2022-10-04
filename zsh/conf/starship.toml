@@ -15,14 +15,14 @@ $directory\
 [](fg:#f43154 bg:#BA8A00)\
 $git_branch\
 $git_status\
-[](fg:#BA8A00 bg:#76bddb)\
-$package\
-[](fg:#76bddb bg:#191f48)\
+[](fg:#BA8A00 bg:#191f48)\
 $python\
 $nodejs\
 $rust\
 $lua\
-[](fg:#191f48 bg:#0a703e)\
+[](fg:#191f48 bg:#76bddb)\
+$package\
+[](fg:#76bddb bg:#0a703e)\
 $shell\
 [ ](fg:#0a703e)\
 """
