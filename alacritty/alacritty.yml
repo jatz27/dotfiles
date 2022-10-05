@@ -3,7 +3,7 @@
 shell:
   # program: "C:\\Windows\\system32\\cmd.exe"
   program: "wsl"
-working_directory: \\wsl.localhost\Ubuntu-22.04\home\julio
+working_directory: \\wsl.localhost\Ubuntu-22.04\home\ #AddNameOfUser
 
 font:
   normal:
