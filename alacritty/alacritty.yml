@@ -22,12 +22,12 @@ font:
 
 window:
   position:
-    x: 100
-    y: 100
+    x: 340
+    y: 55
 
   dimensions:
-    columns: 133
-    lines: 40
+    columns: 155
+    lines: 53
 
   # padding:
   #   x: 10
