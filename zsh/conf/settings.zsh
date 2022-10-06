@@ -1,7 +1,6 @@
 # Enable colors and change prompt:
 # autoload -U colors && colors
 # PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-
 # starship
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/zsh/conf/starship.toml
@@ -63,3 +62,8 @@ source /home/julio/.zsh/plugins/zsh-z/zsh-z.plugin.zsh 2>/dev/null
 
 # Put off color green of folders
 export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
+#Customs
+export TERM=xterm-256color
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
