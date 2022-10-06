@@ -11,8 +11,8 @@ bufferline.setup {
     left_mouse_command = "buffer %d", -- can be a string | function, see "Mouse actions"
     middle_mouse_command = nil, -- can be a string | function, see "Mouse actions"
     --[[ indicator_icon = "▎", ]]
-    buffer_close_icon = "",
-    -- buffer_close_icon = '',
+    --[[ buffer_close_icon = "", ]]
+    buffer_close_icon = '',
     modified_icon = "●",
     close_icon = "",
     -- close_icon = '',
@@ -67,12 +67,12 @@ bufferline.setup {
       bg = { attribute = "bg", highlight = "TabLine" },
     },
     tab_close = {
-      fg = { attribute = "fg", highlight = "TabLineSel" },
+      fg = { attribute = "fg", highlight = "TabLine" },
       bg = { attribute = "bg", highlight = "Normal" },
     },
     duplicate_selected = {
-      fg = { attribute = "fg", highlight = "TabLineSel" },
-      bg = { attribute = "bg", highlight = "TabLineSel" },
+      fg = { attribute = "fg", highlight = "TabLine" },
+      bg = { attribute = "bg", highlight = "TabLine" },
       --[[ gui = "italic", ]]
     },
     duplicate_visible = {

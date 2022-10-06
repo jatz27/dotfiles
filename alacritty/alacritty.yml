@@ -1,5 +1,6 @@
 # config of alacritty $HOME\AppData\Roaming\alacritty\alacritty.yml
-
+env:
+  TERM: xterm-256color
 shell:
   # program: "C:\\Windows\\system32\\cmd.exe"
   program: "wsl"

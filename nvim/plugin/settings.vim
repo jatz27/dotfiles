@@ -35,3 +35,4 @@ set ruler              			" Show the cursor position all the time
 set cursorcolumn                        " Enable highlighting of the current column
 set foldmethod=manual
 set noshowmode                          " Quita el --INSERT--
+set termguicolors
