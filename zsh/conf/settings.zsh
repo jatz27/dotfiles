@@ -55,10 +55,8 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 # autoload edit-command-line; zle -N edit-command-line
 # bindkey '^e' edit-command-line
 
-# Load zsh-syntax-highlighting; should be last.
-source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
-source /home/julio/.zsh/plugins/zsh-z/zsh-z.plugin.zsh 2>/dev/null
+# Tmux
+[ -z "$TMUX" ] && command -v tmux > /dev/null && TERM=xterm-256color && exec tmux
 
 # Put off color green of folders
 export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
@@ -67,3 +65,8 @@ export TERM=xterm-256color
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# Load zsh-syntax-highlighting; should be last.
+source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+source /home/julio/.zsh/plugins/zsh-z/zsh-z.plugin.zsh 2>/dev/null
