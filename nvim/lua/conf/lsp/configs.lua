@@ -12,12 +12,12 @@ local servers = { "jsonls",
   "bashls",
   "vimls",
   "pyright",
-  --"cssmodules_ls",
-  --"emmet_ls",
-  --"sqlls",
-  --[[ "taplo", ]]
   "yamlls",
-  --"rust_analyzer",
+  --[[ "cssmodules_ls", ]]
+  --[[ "emmet_ls", ]]
+  --[[ "sqlls", ]]
+  --[[ "taplo", ]]
+  --[[ "rust_analyzer", ]]
   -- "powershell_es",
 }
 

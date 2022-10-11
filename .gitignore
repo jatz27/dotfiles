@@ -3,6 +3,7 @@ scoop
 nvim/plugin/packer_compiled.lua
 lazygit
 TabNine
+helix
 
 # Archivos compilados de lua
 *.src.rock
