@@ -67,12 +67,12 @@ bufferline.setup {
       bg = { attribute = "bg", highlight = "TabLine" },
     },
     tab_close = {
-      fg = { attribute = "fg", highlight = "TabLine" },
+      fg = { attribute = "fg", highlight = "TabLineSel" },
       bg = { attribute = "bg", highlight = "Normal" },
     },
     duplicate_selected = {
-      fg = { attribute = "fg", highlight = "TabLine" },
-      bg = { attribute = "bg", highlight = "TabLine" },
+      fg = { attribute = "fg", highlight = "TabLineSel" },
+      bg = { attribute = "bg", highlight = "TabLineSel" },
       --[[ gui = "italic", ]]
     },
     duplicate_visible = {

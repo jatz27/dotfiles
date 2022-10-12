@@ -1,5 +1,5 @@
 # Configuration alias 
-alias vim="nvim"
+alias v="nvim"
 alias ls="exa -a --icons"
 alias ll="exa -alh --icons"
 alias cat="bat"
