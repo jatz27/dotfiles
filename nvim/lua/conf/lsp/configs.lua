@@ -8,7 +8,7 @@ local lspconfig = require("lspconfig")
 local servers = { "jsonls",
   "sumneko_lua",
   "tsserver",
-  "eslint",
+  --[[ "eslint", ]]
   "bashls",
   "vimls",
   "pyright",
