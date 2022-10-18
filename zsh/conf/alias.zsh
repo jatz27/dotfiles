@@ -7,4 +7,4 @@ alias ..="cd .."
 alias -g ...='cd ../..'
 alias -g ....='cd ../../..'
 alias -- -='cd -'
-alias py="python3"
+alias py="python"
