@@ -65,7 +65,7 @@ truncation_length = 1
 # truncation_symbol = "…/"
 style = "bold bg:#f43154 fg:#ffffff"
 home_symbol = " ~"
-read_only_style = "bold bg:#dc291e fg:#ffffff"
+read_only_style = "bold bg:#f43154 fg:#ffffff"
 read_only = "  "
 format = "[ $path ]($style)[$read_only]($read_only_style)"
 

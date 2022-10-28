@@ -9,9 +9,9 @@ local servers = {
 	--	"yamlls",
 	--[[ "cssmodules_ls", ]]
 	--[[ "emmet_ls", ]]
-	--[[ "sqlls", ]]
+	--[[ "sqls", ]]
 	--[[ "taplo", ]]
-	--[[ "rust_analyzer", ]]
+	"rust_analyzer",
 	-- "powershell_es",
 }
 

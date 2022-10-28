@@ -14,8 +14,9 @@ null_ls.setup({
 		formatting.stylua,
 		formatting.prettier,
 		--[[ formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }), ]]
-		--[[ formatting.black, ]]
 		formatting.black.with({ extra_args = { "--fast" } }),
+		formatting.rustfmt,
+		formatting.sql_formatter,
 		--[[ diagnostics.flake8, ]]
 		--[[ diagnostics.eslint, ]]
 	},

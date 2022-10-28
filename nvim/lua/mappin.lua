@@ -1,8 +1,8 @@
 local mapper = function(mode, key, result)
-  vim.api.nvim_set_keymap(mode, key, result, { noremap = true, silent = true })
+	vim.api.nvim_set_keymap(mode, key, result, { noremap = true, silent = true })
 end
 
-vim.g.mapleader = ' '
+vim.g.mapleader = " "
 
 -- Salir y guardar
 mapper("n", "w", ":w<CR>")
@@ -16,10 +16,11 @@ mapper("n", "<A-q>", ":q!<CR>")
 --[[ mapper("n", "<leader>dv", ":vsplit<CR>") ]]
 --[[ mapper("n", "<leader>dh", ":split<CR>") ]]
 
--- TAB siguiente buffer
+-- Move in buffers
 mapper("n", "<S-l>", ":bnext<CR>")
--- SHIFT-TAB previo buffer
 mapper("n", "<S-h>", ":bprevious<CR>")
+-- Move in tabs
+mapper("n", "<TAB>", ":tabNext<CR>")
 
 -- Regresar a modo insertar con jk
 mapper("i", "jk", "<Esc>")
