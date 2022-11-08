@@ -24,8 +24,31 @@ $lua\
 $package\
 [](fg:#76bddb bg:#0a703e)\
 $shell\
-[ ](fg:#0a703e)\
+[ ](fg:#0a703e)\
 """
+
+#Fomat with arrows ----------------------------------------------------------
+# [](#D3D7CF)\
+# $env_var\
+# [](fg:#D3D7CF bg:#33658A)\
+# $username\
+# $hostname\
+# [](fg:#33658A bg:#f43154)\
+# $directory\
+# [](fg:#f43154 bg:#BA8A00)\
+# $git_branch\
+# $git_status\
+# [](fg:#BA8A00 bg:#191f48)\
+# $python\
+# $nodejs\
+# $rust\
+# $lua\
+# [](fg:#191f48 bg:#76bddb)\
+# $package\
+# [](fg:#76bddb bg:#0a703e)\
+# $shell\
+# [ ](fg:#0a703e)\
+# --------------------------------------------------------------------------
 
 #$character
 # Change the default prompt characters

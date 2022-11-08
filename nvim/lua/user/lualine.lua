@@ -32,11 +32,11 @@ local mode = {
 	end,
 }
 
--- local filetype = {
--- 	"filetype",
--- 	icons_enabled = false,
--- 	icon = nil,
--- }
+local filetype = {
+	"filetype",
+	icons_enabled = true,
+	icon = nil,
+}
 
 local branch = {
 	"branch",
@@ -50,18 +50,18 @@ local location = {
 }
 
 -- cool function for progress
---[[ local progress = function() ]]
---[[ 	local current_line = vim.fn.line(".") ]]
---[[ 	local total_lines = vim.fn.line("$") ]]
---[[ 	local chars = { "__", "▁▁", "▂▂", "▃▃", "▄▄", "▅▅", "▆▆", "▇▇", "██" } ]]
---[[ 	local line_ratio = current_line / total_lines ]]
---[[ 	local index = math.ceil(line_ratio * #chars) ]]
---[[ 	return chars[index] ]]
---[[ end ]]
+local progress = function()
+	local current_line = vim.fn.line(".")
+	local total_lines = vim.fn.line("$")
+	local chars = { "__", "▁▁", "▂▂", "▃▃", "▄▄", "▅▅", "▆▆", "▇▇", "██" }
+	local line_ratio = current_line / total_lines
+	local index = math.ceil(line_ratio * #chars)
+	return chars[index]
+end
 
--- local spaces = function()
--- 	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
--- end
+local spaces = function()
+	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
+end
 
 local lsp_client = {
 	-- Lsp server name .
@@ -89,7 +89,14 @@ lualine.setup({
 		icons_enabled = true,
 		theme = "auto",
 		component_separators = { left = "", right = "" },
-		section_separators = { left = "", right = "" },
+		section_separators = { left = "", right = "" },
+		--[[ with bubbles ]]
+		--[[ component_separators = "|", ]]
+		--[[ section_separators = { left = "", right = "" }, ]]
+		-- with arrows
+		--[[ component_separators = { left = "", right = "" }, ]]
+		--[[ section_separators = { left = "", right = "" }, ]]
+		--[[ with nothing ]]
 		-- component_separators = { left = "", right = "" },
 		-- section_separators = { left = "", right = "" },
 		disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
@@ -97,12 +104,12 @@ lualine.setup({
 	},
 	sections = {
 		lualine_a = { mode },
-		lualine_b = { diagnostics },
+		lualine_b = { diagnostics, branch, diff },
 		lualine_c = { lsp_client },
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
-		lualine_x = { "filename", "filetype" },
-		lualine_y = { branch, diff },
-		lualine_z = { location },
+		lualine_x = { "filename" },
+		lualine_y = { filetype, "encoding", "fileformat" },
+		lualine_z = { location, progress },
 	},
 	inactive_sections = {
 		lualine_a = {},

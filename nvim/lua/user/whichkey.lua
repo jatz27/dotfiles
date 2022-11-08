@@ -79,16 +79,16 @@ local opts = {
 }
 
 local mappings = {
-	--[[ ["-"] = { "<cmd>lua require(\"Comment.api\").toggle_current_linewise()<CR>", "Comment" }, ]]
-	["-"] = { "<Plug>(easymotion-overwin-w)", "Move to Word" },
-	["_"] = { "<Plug>(easymotion-overwin-line)", "Move to Line" },
+	--[[ ["-"] = { '<cmd>lua require("Comment.api").toggle_current_linewise()<CR>', "Comment" }, ]]
+	["|"] = { "<cmd>vsplit<CR>", "Vertical" },
+	["_"] = { "<cmd>split<CR>", "Horizontal" },
 	["a"] = { "<cmd>Alpha<cr>", "Alpha" },
 	["b"] = {
 		"<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
 		"Buffers",
 	},
 	["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-	["w"] = { "<cmd>w!<CR>", "Save" },
+	--[[ ["w"] = { "<cmd>w!<CR>", "Save" }, ]]
 	["q"] = { "<cmd>q!<CR>", "Quit" },
 	["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
 	["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
@@ -185,9 +185,7 @@ local mappings = {
 	},
 
 	d = {
-		name = "Splite",
-		v = { "<cmd>vsplit<CR>", "Vertical" },
-		h = { "<cmd>split<CR>", "Horizontal" },
+		name = "Debug",
 	},
 
 	x = {
@@ -199,6 +197,13 @@ local mappings = {
 		q = { "<cmd>TroubleToggle quickfix<cr>", "Trouble Quickfix" },
 		r = { "<cmd>TroubleToggle lsp_references<cr>", "Trouble Lsp References" },
 		c = { "<cmd>TroubleClose<cr>", "Trouble Toggle Close" },
+	},
+
+	w = {
+		name = "Web Live Server",
+		o = { "<cmd>BrowserOpen<cr>", "Open Server" },
+		r = { "<cmd>BrowserRestart<cr>", "Restart Server" },
+		s = { "<cmd>BrowserStop<cr>", "Stop Server" },
 	},
 }
 

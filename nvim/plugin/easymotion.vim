@@ -13,3 +13,6 @@
 " Search in all file
 map  \ <Plug>(easymotion-sn)
 omap \ <Plug>(easymotion-tn)
+
+map `	<Plug>(easymotion-overwin-w)
+map ~	<Plug>(easymotion-overwin-line)
