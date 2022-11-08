@@ -43,14 +43,20 @@ return packer.startup(function(use)
 	-- Packer
 	use("wbthomason/packer.nvim") -- Restor de paquetes
 	use("lewis6991/impatient.nvim") -- Optimization
-	-- themes and colorscheme
-	use("navarasu/onedark.nvim") -- colorscheme onedark
+
+	-- colorscheme and icons
 	use("kyazdani42/nvim-web-devicons") --Iconos
+	use("olimorris/onedarkpro.nvim") -- colorscheme onedarkpro
+	use("folke/tokyonight.nvim") -- colorscheme tokyonight
+	use("kvrohit/mellow.nvim") -- colorscheme mellow
+	use("EdenEast/nightfox.nvim") -- colorscheme nightfox
+
 	-- Lualine
 	use("nvim-lualine/lualine.nvim") -- Status Line
 	-- Bufferline
 	use("akinsho/bufferline.nvim")
-	use("moll/vim-bbye")
+	use("moll/vim-bbye") -- close buffers
+
 	-- Alpha dashboard
 	use("goolord/alpha-nvim")
 	-- which-key
@@ -105,6 +111,7 @@ return packer.startup(function(use)
 
 	-- Nvim Tree
 	use("kyazdani42/nvim-tree.lua")
+
 	-- Ident
 	use("lukas-reineke/indent-blankline.nvim")
 

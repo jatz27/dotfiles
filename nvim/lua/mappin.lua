@@ -21,6 +21,7 @@ mapper("n", "<S-l>", ":bnext<CR>")
 mapper("n", "<S-h>", ":bprevious<CR>")
 -- Move in tabs
 mapper("n", "<TAB>", ":tabNext<CR>")
+mapper("n", "<TAB-q>", ":tabclose<CR>")
 
 -- Regresar a modo insertar con jk
 mapper("i", "jk", "<Esc>")

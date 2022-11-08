@@ -1,6 +1,6 @@
 require("mappin")
 require("plugins")
-require("user.onedark")
+require("user.theme")
 require("user.lualine")
 require("user.bufferline")
 require("user.cmp")

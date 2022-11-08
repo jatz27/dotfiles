@@ -8,7 +8,7 @@ local servers = {
 	"pyright",
 	--	"yamlls",
 	--[[ "cssmodules_ls", ]]
-	--[[ "emmet_ls", ]]
+	"emmet_ls",
 	--[[ "sqls", ]]
 	--[[ "taplo", ]]
 	"rust_analyzer",
