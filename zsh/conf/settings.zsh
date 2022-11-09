@@ -67,6 +67,6 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Load zsh-syntax-highlighting; should be last.
-source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
-source /home/julio/.zsh/plugins/zsh-z/zsh-z.plugin.zsh 2>/dev/null
+# source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+# source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+# source ~/.zsh/plugins/zsh-z/zsh-z.plugin.zsh 2>/dev/null
