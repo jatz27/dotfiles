@@ -3,8 +3,9 @@ env:
   TERM: xterm-256color
 shell:
   # program: "C:\\Windows\\system32\\cmd.exe"
-  program: "wsl"
+  # program: "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
 working_directory: \\wsl.localhost\Ubuntu-22.04\home\julio #AddNameOfUser
+# working_directory: "C:\\Users\\julio" #AddNameOfUser
 
 font:
   normal:
