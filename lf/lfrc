@@ -8,6 +8,8 @@ map DD delete
 map p paste
 map x cut
 map y copy
+map n $nvim
+map gl $lazygit
 # Open files */
 cmd open $nvim "$f"
 
@@ -36,4 +38,4 @@ cmd tar %tar cvf "$f.tar" "$f"
 cmd targz %tar cvzf "$f.tar.gz" "$f"
 cmd tarbz2 %tar cjvf "$f.tar.bz2" "$f"
 
-map gpro cd /mnt/a/Documentos/Personal/projects
+# map gpro cd /mnt/a/Documentos/Personal/projects
