@@ -120,7 +120,7 @@ lualine.setup({
 			{ "mode", separator = { left = "", right = "" } },
 		},
 		lualine_b = { diagnostics, lsp_client },
-		lualine_c = {},
+		lualine_c = { "tabnine" },
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = {
 			{

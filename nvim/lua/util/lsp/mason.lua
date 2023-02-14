@@ -1,9 +1,9 @@
 local servers = {
-	"sumneko_lua",
---	"jsonls",
---"tsserver",
---"pyright",
---"emmet_ls",
+	"lua_ls",
+	"jsonls",
+	"tsserver",
+	"pyright",
+	"emmet_ls",
 	--[[ "eslint", ]]
 	--[[ "bashls", ]]
 	--[[ "vimls", ]]

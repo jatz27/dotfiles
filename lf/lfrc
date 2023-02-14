@@ -38,4 +38,4 @@ cmd tar %tar cvf "$f.tar" "$f"
 cmd targz %tar cvzf "$f.tar.gz" "$f"
 cmd tarbz2 %tar cjvf "$f.tar.bz2" "$f"
 
-# map gpro cd /mnt/a/Documentos/Personal/projects
+map ga cd /mnt/a
