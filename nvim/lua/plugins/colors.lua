@@ -1,22 +1,29 @@
 return {
-"uloco/bluloco.nvim",
+	"AlexvZyl/nordic.nvim",
 	dependencies = {
 		"rktjmp/lush.nvim",
 		"kyazdani42/nvim-web-devicons", --Iconos
 	},
-lazy = false,
+	lazy = false,
+	priority = 1000,
 	config = function()
-		local status_ok, bluloco = pcall(require, "bluloco")
-		if not status_ok then
-			return
-		end
-
-		bluloco.setup({
-			style = "dark", -- "auto" | "dark" | "light" ]]
-			transparent = false,
-			italics = false,
-			terminal = vim.fn.has("gui_running") == 1, -- bluloco colors are enabled in gui terminals per default.
+		require("nordic").load({
+			theme = "nordic",
+			bold_keywords = true,
+			italic_comments = false,
+			transparent_bg = false,
+			noice = {
+				style = "flat",
+			},
+			telescope = {
+				style = "flat",
+			},
+			lspsaga = {
+				style = "flat",
+			},
+			leap = {
+				dim_backdrop = false,
+			},
 		})
-		vim.cmd("colorscheme bluloco")
 	end,
 }

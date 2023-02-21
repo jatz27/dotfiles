@@ -4,6 +4,8 @@ local servers = {
 	"tsserver",
 	"pyright",
 	"emmet_ls",
+	"html",
+	"cssls",
 	--[[ "eslint", ]]
 	--[[ "bashls", ]]
 	--[[ "vimls", ]]

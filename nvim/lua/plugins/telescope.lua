@@ -2,7 +2,10 @@ return {
 	"nvim-telescope/telescope.nvim",
 	lazy = true,
 	cmd = "Telescope",
-	keys = { { "<M-f>", "<cmd>Telescope find_files<cr>", mode = "n" } },
+	keys = {
+		{ "<M-f>", "<cmd>Telescope find_files<cr>", mode = "n" },
+		{ "<M-w>", "<cmd>Telescope live_grep<cr>", mode = "n" },
+	},
 	config = function()
 		require("util.telescope.config")
 	end,

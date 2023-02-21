@@ -1,11 +1,17 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
-	dependencies = {
-		"p00f/nvim-ts-rainbow",
-	},
 	lazy = true,
-	build = ":TSUpate",
-	event = "BufReadPost",
+	build = function()
+		if #vim.api.nvim_list_uis() ~= 0 then
+			vim.api.nvim_command("TSUpdate")
+		end
+	end,
+	event = { "CursorHold", "CursorHoldI" },
+	dependencies = {
+		"NvChad/nvim-colorizer.lua",
+		"mrjones2014/nvim-ts-rainbow",
+		"andymass/vim-matchup",
+	},
 	config = function()
 		require("nvim-treesitter.configs").setup({
 			ensure_installed = {
@@ -42,15 +48,14 @@ return {
 			},
 			rainbow = {
 				enable = true,
-				-- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
 				extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
-				max_file_lines = nil, -- Do not enable for files with more than n lines, int
-				-- colors = {}, -- table of hex strings
-				-- termcolors = {} -- table of colour name strings
+				max_file_lines = 200, -- Do not enable for files with more than n lines, int
 			},
 			autotag = { -- enable plugin autotag
 				enable = true,
 			},
+			matchup = { enabled = true },
 		})
+		require("colorizer").setup({})
 	end,
 }
