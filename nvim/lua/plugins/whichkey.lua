@@ -97,6 +97,12 @@ return {
 				r = { "<cmd>BrowserRestart<cr>", "Restart Server" },
 				s = { "<cmd>BrowserStop<cr>", "Stop Server" },
 			},
+			M = {
+				name = "Markdown Preview",
+				o = { "<cmd>MarkdownPreview<cr>", "Open Server of Markdown" },
+				s = { "<cmd>MarkdownPreviewStop<cr>", "Stop Server of Markdown" },
+				t = { "<cmd>MarkdownPreviewToggle<cr>", "Toggle Server of Markdown" },
+			},
 		}
 		local vopts = {
 			mode = "v", -- VISUAL mode
