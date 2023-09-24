@@ -1,7 +1,7 @@
 local status_cmp, _ = pcall(require, "cmp")
 if not status_cmp then
-	return
+  return
 end
 
 require("util.cmp.cmp")
-require("util.cmp.tabnine")
+--[[ require("util.cmp.tabnine") ]]

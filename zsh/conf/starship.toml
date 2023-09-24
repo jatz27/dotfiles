@@ -131,7 +131,7 @@ detect_extensions = ["py"]
 style = "bold fg:#ebcc34 bg:#191f48"
 
 [nodejs]
-symbol = "󰎙 "
+symbol = " "
 format = "[ $symbol$version ]($style)"
 style = "bold fg:#33dd2d bg:#191f48"
 detect_extensions = ["js", "mjs", "cjs", "ts", "mts", "cts"]
