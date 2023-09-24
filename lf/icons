@@ -152,8 +152,8 @@ fi             # FILE
 *.elm           
 *.swift         
 *.xcplayground  
-*.tex           ﭨ
-*.r             ﳒ
+*.tex           
+*.r             
 *.rproj         鉶
 *.sol           ﲹ
 *.pem           

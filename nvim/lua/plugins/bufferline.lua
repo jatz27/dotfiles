@@ -1,7 +1,8 @@
 return {
 	"akinsho/bufferline.nvim",
 	dependencies = {
-		"kyazdani42/nvim-web-devicons",
+		--[[ "kyazdani42/nvim-web-devicons", ]]
+    "nvim-tree/nvim-web-devicons",
 		"moll/vim-bbye",
 		"szw/vim-maximizer",
 	},
