@@ -56,6 +56,10 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 # autoload edit-command-line; zle -N edit-command-line
 # bindkey '^e' edit-command-line
 
+# Bindkey for history substring search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
 # Tmux
 [ -z "$TMUX" ] && command -v tmux > /dev/null && TERM=xterm-256color && exec tmux
 

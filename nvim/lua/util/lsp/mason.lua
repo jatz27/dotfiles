@@ -6,6 +6,9 @@ local servers = {
 	"emmet_ls",
 	"html",
 	"cssls",
+	--[[ "stylua", ]]
+	--[[ "black", ]]
+	--[[ "flake8", ]]
 	--[[ "eslint", ]]
 	--[[ "bashls", ]]
 	--[[ "vimls", ]]

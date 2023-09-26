@@ -11,8 +11,9 @@ return {
 		-- snippets
 		"L3MON4D3/LuaSnip", --snippet engine
 		"rafamadriz/friendly-snippets", -- a bunch of snippets to use
+		"onsails/lspkind.nvim", -- kind icons for cmp
 		-- Tabnine complete
-	{ "tzachar/cmp-tabnine", build = "./install.sh" },
+		{ "tzachar/cmp-tabnine", build = "./install.sh" },
 	},
 	config = function()
 		require("util.cmp")
